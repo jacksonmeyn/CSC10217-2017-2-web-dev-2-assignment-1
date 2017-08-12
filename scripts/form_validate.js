@@ -1,21 +1,3 @@
-function clearErrors() {
-   
-   
-   //Clear any errors already showing
-   var errorMessages = document.getElementsByClassName("error");
-      alert(errorMessages.length);
-      for (var i = 0; i <= errorMessages.length; i++) {
-      (function() {
-         var errorId = errorMessages[i].id;
-         document.getElementById(errorId).innerHTML = "";
-         alert(errorId);
-      })();
-   }
-   
-   alert("Finished");
-   
-}
-
 //Add error messages to alert box and to error spans
 function buildErrorAlert(existingError, errorToAdd, elementID) {
    
@@ -28,11 +10,12 @@ function buildErrorAlert(existingError, errorToAdd, elementID) {
       newError = existingError + "\n" + errorToAdd;
    }
    
-   // if (document.getElementById("formError").innerHTML = "") {
+   if (document.getElementById("formError").innerHTML == "") {
       
-   document.getElementById("formError").innerHTML = "There were errors above. Please check them and try again";
+      document.getElementById("formError").innerHTML = "There were errors above. Please check them and try again";
       
-   // }
+   }
+   
    
    document.getElementById(elementID).innerHTML = errorToAdd;
    
@@ -42,13 +25,14 @@ function buildErrorAlert(existingError, errorToAdd, elementID) {
 
 function formValidate(event) {
    
-   alert("I'm about to clear errors.");
-   
-   clearErrors();
-   
-   alert("I'm back");
-   
    var error;
+   
+   //Clear any errors already showing
+   var errorMessageSpans = document.getElementsByClassName("error");
+   for (var i = 0; i < errorMessageSpans.length; i++) {
+      var errorId = errorMessageSpans[i].id;
+      document.getElementById(errorId).innerHTML = "";
+   }
    
    //Save some typing :)
    const joinForm = document.forms[0];
