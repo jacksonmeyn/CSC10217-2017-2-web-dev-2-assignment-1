@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="author" content="Jackson Meyn">
+      <meta name="description" content="Retro Movie Rentals and Sales Homepage">
+      <meta name="keywords" content="dvd,bluray,blu-ray,dvd rent,dvd rental,dvd sale,dvd sales"> 
+      <title>Home | Retro Movie Rentals and Sales</title>
+      
+      <link rel="stylesheet" href="css/print.css" media="print">
+      <link rel="stylesheet" href="css/join.css" media="screen">
+      
+      <script src="scripts/form_validate.js"></script>
+      <script src="scripts/form_help.js"></script>
+      <script src="scripts/add_event_listeners.js"></script>
+      
+</head>
+   
+<body>
+   <div id="skip">
+      <small><a href="#content">Skip To Content</a></small>
+   </div>
+   <div id="wrapper">
+      <header id="header">
+
+         
+         <div id="logo">
+            <h2>Logo</h2>
+         </div>
+         
+         <div id="siteTitle">
+            <h2>Retro Movie Rentals and Sales</h2>
+         </div>
+         
+
+      <nav>
+         <ul>
+            <li class="selectedNavItem">Home</li>
+            <li><a href="movie_zone.html">MovieZone</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="tech_zone.html">TechZone</a></li>
+         </ul>
+      </nav>   
+         <br>
+      </header>
+
+
+      <aside>
+         <h3 class="center">Check out our new releases!</h3>
+         <h4><span class="movieTitle">Captain America: The Winter Soldier</span></h4>
+         <img class="movieThumbnail" src="images/movie_thumbnails/1250744227winter.jpg" 
+         alt="Captain America: The Winter Soldier thumbnail" width="214" height="317"/>
+         <br>
+         <b>Genre: </b>Adventure<br />
+         <b>Director: </b>Anthony Russo<br />
+         <b>Classification: </b>M<br />
+         <b>Starring: </b>Chris Evans, Samuel L. Jackson, Scarlett Johansson, Robert Redford, 
+         Sebastian Stan and Anthony Mackie.
+         <p>
+            <b>In heroes we trust</b>
+         </p>
+         <p>
+            As Steve Rogers struggles to embrace his role in the modern world, he teams up with 
+            another super soldier, the black widow, to battle a new threat from old history: an 
+            assassin known as the Winter Soldier.
+         </p>
+      </aside>
+      <main id="content">
+      
+         <div id="inputHelp">
+         <h4>Need some help?</h4>
+         <p id="helpText">Select a form field for help.</p>
+         </div>
+         
+         <p>Fill out the form below to create your account</p>
+         
+         <p>Required fields are marked with a *</p>
+         <form id="joinForm" method="post" action="http://infotech.scu.edu.au/cgi-bin/echo_form">
+      
+         <fieldset id="personalFieldset">
+            <legend><strong>Your details: </strong></legend>
+            <label for="surname">Surname: *</label>
+            <input type="text" name="surname" id="surname" size="50" maxlength="50" 
+            required="required">
+         
+            <label for="fname">Other Names: *</label>
+            <input type="text" name="fname" id="fname" size="60" maxlength="60" 
+            required="required">
+            
+            <label for="occupation">Occupation: </label>
+            <select name="occupation" required="required">
+               <option value=""></option>
+               <option value="student">Student</option>
+               <option value="manager">Manager</option>
+               <option value="medical_worker">Medical Worker</option>
+               <option value="trades_worker">Trades Worker</option>
+               <option value="education">Education</option>
+               <option value="technician">Technician</option>
+               <option value="clerical_worker">Clerical Worker</option>
+               <option value="retail_worker">Trades Worker</option>
+               <option value="researcher">Researcher</option>
+               <option value="other">Other</option>
+            </select>
+         
+         </fieldset>
+         
+         <fieldset id="preferredContactFieldset">
+            <legend><strong>Preferred contact method: *</strong></legend>
+            <input class="radio" type="radio" name="preferredContact" id="emailRadio" value="email" 
+             checked="checked">
+            <label class="radioLabel" for="emailRadio">Email</label>
+            <input class="radio" type="radio" name="preferredContact" id="landlinePhoneRadio" 
+            value="landlinePhone">
+            <label class="radioLabel" for="landlinePhoneRadio">Landline Phone</label>
+            <input class="radio" type="radio" name="preferredContact" id="mobilePhoneRadio" 
+            value="mobilePhone">
+            <label class="radioLabel" for="mobilePhoneRadio">Mobile Phone</label>
+         </fieldset>
+         
+         <fieldset id="contactDetailsFieldset">
+            <legend><strong>Contact details:</strong></legend>
+            <p><strong>NOTE: </strong>Only the preferred contact method chosen above is compulsory 
+            in this section.</p>
+            <label for="email">Email:</label>
+            <input type="email" name="emailAddress" id="email" size="50" maxlength="50">
+            
+            <label for="daytimephone">Daytime phone (landline): <small>(format must be (XX) XXXX 
+            XXXX including brackets and spaces)</small></label>
+            <input type="tel" name="daytimePhone" id="daytimePhone" size="13" maxlength="13" 
+            pattern="\(0([2-3]|[6-9])\)\s\d{8}">
+            
+            <label for="mobile">Mobile phone: <small>(format must be XXXX XXX XXX including 
+            spaces)</small></label>
+            <input type="tel" name="mobile" id="mobilePhone" size="12" maxlength="12"
+            pattern="0(4|5)\d{2}\s\d{3}\s\d{3}">
+         </fieldset>
+         
+         <fieldset id="postalAddress">
+            <legend><strong>Postal Address</strong></legend>
+            
+            <label for="magazineOptIn">Receive our monthly magazine by post?</label>
+            <input type="checkbox" checked="checked" name="magazineOptIn" id="magazineOptIn">
+            
+            <label for="streetaddress">Street Address: </label>
+            <input type="text" name="streetaddress" id="streetaddress" size="50" maxlength="50">
+         
+            <label for="suburb">Suburb: </label>
+            <input type="text" name="suburb" id="suburb" size="50" maxlength="50">
+            
+            <label for="postcode">Postcode: </label>
+            <input type="text" name="postcode" id="postcode" size="4" maxlength="4" 
+            pattern="\d{4}">
+         
+         </fieldset>
+         
+         <fieldset id="accountDetails">
+            <legend><strong>Account Details</strong></legend>
+            
+            <label for="username">Username: * <small>(must be 6-10 characters with no 
+            spaces)</small></label>
+            <input type="text" name="username" id="username" size="10" maxlength="10" 
+            pattern="[^\s]{6,10}" required="required">
+         
+            <label for="password">Password: * </label>
+            <input type="password" name="password" id="password" size="10" maxlength="10" 
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{1,10}$" 
+            required="required">
+            
+            <label for="confirmPassword">Confirm Password: * <small>(must match password 
+            above)</small></label>
+            <input type="password" name="confirmPassword" id="confirmPassword" size="10" 
+            maxlength="10" 
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{1,10}$" required="required">
+         
+         </fieldset>
+         
+         <div id="buttons">
+            <input id="submitButton" type="submit" value="Join">
+            <input id="resetButton" type="reset" value="Reset">
+         </div>
+      
+      </form>
+      
+      <small><a class="backToTop" href="#content">Back to top</a></small>
+      <hr class="newpage" />
+      </main>
+      <footer>
+         <div id="footerMenu">
+            <ul>
+               <li><h3>Menu</h3></li>
+               <li class="selectedNavItem">Home</li>
+               <li><a href="movie_zone.html">MovieZone</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="join.html">Join</a></li>
+               <li><a href="tech_zone.html">TechZone</a></li>
+            </ul>
+         </div>
+         <div id="legal">
+            <p><a href="http://infotech.scu.edu.au/~jmeyn10">
+            http://infotech.scu.edu.au/~jmeyn10</a></p>
+            <p>Copyright &copy; 2017. Jackson Meyn is the copyright holder of all content on this site 
+            or, where content has been sourced elsewhere &#40;see reference list below&#41;, has 
+            permission to use the content.
+            </p>
+         </div>
+         <br>
+      </footer>
+      
+   </div>
+   <script>
+      addEventListeners();
+   </script>
+</body>
+
+</html>

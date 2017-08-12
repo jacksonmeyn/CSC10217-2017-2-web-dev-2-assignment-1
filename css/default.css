@@ -1,0 +1,238 @@
+main {
+   display: block;
+}
+
+.center {
+   text-align: center;
+}
+
+#skip {
+   height: 1px;
+   width: 1px;
+   position: absolute;
+   overflow: hidden;
+   top: -10px;
+   float: right;
+}
+
+header, main, aside, footer {
+   border: 1px solid black;
+   box-shadow: 10px 10px 20px;
+}
+
+body {
+   margin: 0;
+   background: #4172B4;
+   background: linear-gradient(#4172B4, #D6B187);
+   background-attachment: fixed;
+   font-family: Georgia, serif;
+   line-height: 150%;
+}
+
+#wrapper {
+   width: 90%;
+   margin: 0 auto;
+   padding: 20px;
+   min-width: 950px;
+}
+
+a {
+   color: green;
+}
+
+nav a, footer a {
+   text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+   color: #5A4A3A;
+   /*font-family: Arial, Helvetica, sans-serif;*/
+   font-family: Georgia, serif;
+}
+
+#logo {
+   float: left;
+}
+
+#logo h2 {
+   font-family: "Century Gothic", serif;
+}
+
+nav {
+   padding: 0;
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+   font-size: 0.95em;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 10px 0;
+   }
+
+nav li {
+   display: inline;
+   border-right: 1px solid black;
+   padding: 0 10px;
+}
+
+.selectedNav {
+   font-weight: bold;
+   color: red;
+}
+
+.noBorderNav {
+   border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+   background-color: #f1f1f1;
+   border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#contactButton {
+   background-color: #E36B18;
+   color: white;
+   font-weight: bold;
+   padding: 10px 0;
+}
+
+#contactButton:hover {
+   background-color: green;
+}
+
+#contactButton a {
+   color: white;
+   display: inline-block;
+   padding: 10px;
+}
+
+header br, footer br {
+   clear: both;
+}
+
+header {
+   border-radius: 20px;
+   margin-bottom: 20px;
+   padding: 10px 20px;
+   position: relative;
+   background-color: #CCDDCC;
+} 
+
+aside {
+   float: right;
+   margin: 0 0 20px 20px;
+   background-color: #68A5E4;
+   border-radius: 20px;
+   padding: 20px;
+   width: 25%;
+}
+
+main {
+   overflow: auto;
+   background-color: #68A5E4;
+   padding: 20px;
+   border-radius: 20px;
+}
+
+hr {
+   border: 0; 
+   height: 3px; 
+   background-image: linear-gradient(to right, rgba(104, 165, 228, 1), rgba(65, 114, 180, 1), rgba(104, 165, 228, 1));
+}
+
+#profilePicture {
+   float: left;
+   margin: 0 20px 5px 0;
+}
+
+footer {
+   clear: both;
+   border-radius: 20px;
+   padding: 20px;
+   background-color: #CCDDCC;
+   margin-top: 20px;
+}
+
+#footerMenu {
+   float: left;
+   font-size:0.9em;
+}
+
+#footerContact {
+   float: left;
+   font-size:0.9em;
+   margin-right: 20px;
+}
+
+footer ul {
+   list-style-type: none;
+}
+
+#legal {
+   margin-left: 20px;
+   font-size:0.7em;
+   text-align: center;
+}
+
+table, th, td {
+   border: 1px solid black;
+   vertical-align: top;
+}
+      
+table {
+   border: 3px solid black;
+   vertical-align: top;
+   font-size: 0.8em;
+}
+      
+td, th {
+   padding: 10px;
+}
+      
+table {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: white;
+}
+      
+.tableSubHeader {
+   background-color: #cccccc;
+}
+
+thead {
+   background-color: darkBlue;
+   color: white;
+}
+      
+tr:nth-of-type(even) {
+   background-color: #E6E6E6; 
+}

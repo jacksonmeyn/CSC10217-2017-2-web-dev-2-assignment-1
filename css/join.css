@@ -1,0 +1,175 @@
+#skip {
+   height: 1px;
+   width: 1px;
+   position: absolute;
+   overflow: hidden;
+   top: -10px;
+   float: right;
+}
+
+main, aside {
+   padding: 0px;
+   margin: 0;
+}
+
+main {
+   width: 75%;
+   background-color:gray;
+}
+
+header {
+   padding: 10px;
+   margin: 0;
+   position: relative;
+   background-color: white;
+}
+
+#logo {
+   float: left;
+   border: 1px solid black;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   background-color: green;
+}
+
+#wrapper {
+   width: 85%;
+   min-width: 900px;
+   margin: 0 auto;
+   background-color: blue;
+   padding: 0;
+}
+
+aside {
+   float: right;
+   width: 25%;
+   font-size:0.8em;
+   background-color: yellow;
+}
+
+footer {
+   margin: 0;
+   padding: 10px;
+   clear: both;
+   background-color: white;
+}
+
+#footerMenu {
+   text-align: center;
+}
+
+.clear {
+   clear:both;
+}
+
+nav {
+   padding: 0;
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   right: 0px;
+   transform: translateY(-50%);
+}
+
+nav ul, footer ul {
+   list-style-type: none;
+   padding: 0;
+   }
+
+nav li, footer li {
+   display: inline;
+   border-right: 1px solid black;
+   padding: 0 10px;
+}
+
+.selectedNavItem {
+   font-weight: bold;
+}
+
+.lastNavItem {
+   border: none;
+}
+
+#legal {
+   font-size:0.5em;
+   text-align: center;
+}
+
+#content, #asidecontent {
+   padding: 10px;
+}
+
+/* Below CSS applies to the membership join form only */
+
+label, .error {
+   float: left;
+   clear: left;
+}
+
+.error {
+   color: red;
+   font-weight: bold;
+   margin: 10px;
+}
+
+fieldset input, fieldset select {
+   float: left;
+   clear: left;
+   margin: 10px 0;
+}
+
+.radio {
+   float: none;
+   clear: none;
+   display: inline-block;
+   vertical-align: middle;
+   margin: 10px 10px;
+}
+
+.radioLabel {
+   float: none;
+   clear: none;
+   display: inline-block;
+   vertical-align: middle;
+   margin: 10px 10px;
+}
+
+form {
+   padding: 10px;
+   width: 65%;
+}
+
+#inputHelp {
+   position: relative;
+   width: 200px;
+   float:right;
+   border: 1px solid black;
+   padding: 10px;
+   margin:0;
+}
+
+#submitButton {
+   background-color: #4CAF50; /* Green */
+   font-size: 16px;
+   padding: 14px 40px;
+   border-radius: 8px;
+   margin-right: 10px;
+}
+
+#resetButton {
+   background-color: #f44336;
+   font-size: 16px;
+   padding: 14px 40px;
+   border-radius: 8px;
+}
+
+#buttons {
+   padding: 10px;
+   clear: both;
+}
